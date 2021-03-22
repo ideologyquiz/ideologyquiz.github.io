@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ideology Quiz</title>
+
+        <!--imports-->
+        <script src="vis.js"></script>
+        <link href="vis.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+          <a class="navbar-brand" href="#">Ideology Quiz</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div class="d-flex justify-content-center py-5">
+            <h1 class="h1 text-center">Ideology Quiz</h1>
+        </div>
+
+        <!--The actual question, or the name of the user's ideology-->
+        <div class="d-flex justify-content-center">
+            <div id="quiz" class="py-2 px-3"></div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div id="answerSection" class="py-2 px-3"></div>
+        </div>
+
+        <!--The graph displaying the user's ideology-->
+        <div class="d-flex justify-content-center">
+            <div id="graph" class=""></div>
+        </div>
+
+        <!--The button that either submits user answers or restarts the quiz-->
+        <div class="container py-2">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <button id="submit" onclick="next()" class="btn btn-primary py-2 w-100">Submit</button>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+        </div>
+
+        <!--Error messages go here-->
+        <div class="d-flex justify-content-center">
+            <div id="errors" class="py-2 text-danger"></div>
+        </div>
+
+        <script src="IdeologyQuiz.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
